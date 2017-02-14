@@ -21,7 +21,7 @@ public class Main extends Application {
 			e.printStackTrace();
 		}
 		Scene scene = new Scene(root);
-		primaryStage.setTitle("connection");
+		primaryStage.setTitle("Memo");
 		primaryStage.setScene(scene);
 		primaryStage.show();
 		
