@@ -1,6 +1,5 @@
 package application;
 
-import java.io.FileNotFoundException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -17,13 +16,19 @@ public class Interface_nouveaupostit implements Initializable{
 	@FXML
 	private TextField textfieldtitre;
 	@FXML
-	private TextArea texareacontenue;
+	private TextArea textareacontenue;
 	@FXML
 	private Button buttonsauvegarder;
+	public static String titre;
+	public static String desc;
+	public static int val=0;
 	
 	@FXML
 	public void handlerSaveButton(){
-		
+		val=0;
+		titre=textfieldtitre.getText();
+		desc=textareacontenue.getText();
+		val=1;
 		Stage stage=(Stage)buttonsauvegarder.getScene().getWindow();
 		stage.close();
 	}

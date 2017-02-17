@@ -12,13 +12,13 @@
       <HBox prefHeight="36.0" prefWidth="600.0" VBox.vgrow="ALWAYS">
          <children>
             <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Titre :" HBox.hgrow="ALWAYS" />
-            <TextField fx:id="textfieldtitre" prefHeight="25.0" prefWidth="554.0" style="-fx-background-color: #F7D358;" HBox.hgrow="ALWAYS" />
+            <TextField fx:id="textfieldtitre" prefHeight="25.0" prefWidth="554.0" style="-fx-background-color: #F7D358;" HBox.hgrow="ALWAYS" onAction="#handlerSaveButton"/>
          </children>
       </HBox>
       <HBox prefHeight="146.0" prefWidth="600.0" VBox.vgrow="ALWAYS">
          <children>
             <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Contenue :" HBox.hgrow="ALWAYS" />
-            <TextArea fx:id="texareacontenue" prefHeight="132.0" prefWidth="527.0" style="-fx-region-background: #F7D358;" HBox.hgrow="ALWAYS" />
+            <TextArea fx:id="textareacontenue" prefHeight="132.0" prefWidth="527.0" style="-fx-region-background: #F7D358;" HBox.hgrow="ALWAYS" />
          </children>
       </HBox>
       <HBox alignment="CENTER" prefHeight="25.0" prefWidth="600.0">

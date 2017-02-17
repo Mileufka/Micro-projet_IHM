@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Programme de gestion de memos." />
+      <Label layoutX="14.0" layoutY="37.0" text="Réalisé grace à JavaFX." />
+      <Label layoutX="14.0" layoutY="106.0" text="Fait par :" />
+      <Label layoutX="84.0" layoutY="106.0" text="PRIME Olivier" />
+      <Label layoutX="84.0" layoutY="129.0" text="ROUX Clément" />
+   </children>
+</Pane>

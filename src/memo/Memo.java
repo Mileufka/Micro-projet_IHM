@@ -19,7 +19,7 @@ public class Memo {
 	public String getTitre(){
 		return titre;
 	}
-	
+
 	public String getDesc(){
 		return desc;
 	}
@@ -27,12 +27,19 @@ public class Memo {
 	public void setTitre(String titre){
 		this.titre=titre;
 	}
-	
+
 	public void setDesc(String desc){
 		this.desc=desc;
 	}
 	
-	public int dateToInt(){
+	public Integer dateToInt(){
 		return Integer.parseInt(this.date);
+	}
+	
+	public void affiche(){
+		System.out.println(titre);
+		System.out.println(desc);
+		System.out.println(date);
+		System.out.println();
 	}
 }
