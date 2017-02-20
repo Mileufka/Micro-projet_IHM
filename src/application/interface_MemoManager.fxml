@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.TilePane?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.76-ea" xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Interface_MemoManager">
    <children>
-      <MenuBar VBox.vgrow="ALWAYS">
+      <MenuBar fx:id="menubar" style="-fx-background-color: #F7D358;" VBox.vgrow="ALWAYS">
          <menus>
             <Menu mnemonicParsing="false" text="File">
                <items>
-                  <MenuItem mnemonicParsing="false" text="Close" />
+                  <MenuItem fx:id="menubarnew" mnemonicParsing="false" text="New" onAction="#handlerButtonNew"/>
+                  <MenuItem fx:id="menubarclose" mnemonicParsing="false" text="Close" onAction="#handlerClose"/>
                </items>
             </Menu>
             <Menu mnemonicParsing="false" text="Edit">
@@ -25,135 +27,25 @@
             </Menu>
             <Menu mnemonicParsing="false" text="Help">
                <items>
-                  <MenuItem mnemonicParsing="false" text="About" />
+                  <MenuItem fx:id="menubarabout" mnemonicParsing="false" text="About" onAction="#handlerAbout"/>
                </items>
             </Menu>
          </menus>
       </MenuBar>
-      <TextField VBox.vgrow="ALWAYS" />
-      <TilePane hgap="5.0" prefHeight="345.0" prefWidth="600.0" vgap="5.0">
+      <HBox prefHeight="420.0" prefWidth="600.0" VBox.vgrow="ALWAYS">
          <children>
-            <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../run/media/clement/DATA/IHM_4A/post-it.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../run/media/clement/DATA/IHM_4A/post-it.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../run/media/clement/DATA/IHM_4A/post-it.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../run/media/clement/DATA/IHM_4A/post-it.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../run/media/clement/DATA/IHM_4A/post-it.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../run/media/clement/DATA/IHM_4A/post-it.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../run/media/clement/DATA/IHM_4A/post-it.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../run/media/clement/DATA/IHM_4A/post-it.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../run/media/clement/DATA/IHM_4A/post-it.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../run/media/clement/DATA/IHM_4A/post-it.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../run/media/clement/DATA/IHM_4A/post-it.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../run/media/clement/DATA/IHM_4A/post-it.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../run/media/clement/DATA/IHM_4A/post-it.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../run/media/clement/DATA/IHM_4A/post-it.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../run/media/clement/DATA/IHM_4A/post-it.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../run/media/clement/DATA/IHM_4A/post-it.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../run/media/clement/DATA/IHM_4A/post-it.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../run/media/clement/DATA/IHM_4A/post-it.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../run/media/clement/DATA/IHM_4A/post-it.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../run/media/clement/DATA/IHM_4A/post-it.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../run/media/clement/DATA/IHM_4A/post-it.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../run/media/clement/DATA/IHM_4A/post-it.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../run/media/clement/DATA/IHM_4A/post-it.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../run/media/clement/DATA/IHM_4A/post-it.png" />
-               </image>
-            </ImageView>
+            <TilePane fx:id="tilepane" hgap="5.0" prefHeight="345.0" prefWidth="600.0" style="-fx-background-color: #F3F781;" vgap="5.0" HBox.hgrow="ALWAYS" />
+            <ScrollBar fx:id="scrollbar" orientation="VERTICAL" HBox.hgrow="ALWAYS" />
          </children>
-      </TilePane>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="26.0" prefWidth="596.0" style="-fx-background-color: #F3F781;" VBox.vgrow="ALWAYS">
+         <children>
+            <Button fx:id="buttonNew" mnemonicParsing="false" onAction="#handlerButtonNew" prefHeight="0.0" prefWidth="600.0" style="-fx-background-color: #FFBF00;" text="New">
+               <rotationAxis>
+                  <Point3D />
+               </rotationAxis>
+            </Button>
+         </children>
+      </HBox>
    </children>
 </VBox>
